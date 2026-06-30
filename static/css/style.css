@@ -1,0 +1,48 @@
+
+    .blurred {
+      filter: blur(6px);
+      user-select: none;
+    }
+      #encryptInputs > div,
+      #decryptInputs > div,
+      #encryptInputs > div > div,
+      #decryptInputs > div > div {
+      margin-bottom: 1rem;
+    }
+      #encryptInputs > div.flex.justify-center.gap-4,
+      #decryptInputs > div.flex.justify-center.gap-4 {
+      margin-top: 1rem;
+      margin-bottom: 1.25rem;
+    }
+      #encryptInputs h3 {
+      margin-bottom: 0.5rem;
+    }
+    #decryptInputs textarea,
+    #decryptInputs input,
+    #encryptInputs input,
+    #encryptInputs select {
+      margin-top: 0.4rem;
+    }
+      .main-container {
+      width: 95%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    @media (min-width: 1024px) {
+      .main-container { width: 85%; }
+    }
+    @media (max-width: 768px) {
+      .main-container { width: 95%; padding: 1rem; }
+    }
+
+    /* Hiệu ứng chữ chạy qua lại */
+    @keyframes bounce-x {
+      0% { transform: translateX(-50vw); }
+      50% { transform: translateX(50vw); }
+      100% { transform: translateX(-50vw); }
+    }
+    .animate-bounce-x {
+      display: inline-block;
+      animation: bounce-x 10s linear infinite;
+    }
+ 
